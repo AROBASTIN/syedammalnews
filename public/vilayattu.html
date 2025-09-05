@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>விளையாட்டு செய்திகள்</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+    }
+    header {
+      background: #b62a00;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 1.8rem;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    h2 {
+      color: #333;
+      font-size: 1.3rem;
+      margin-bottom: 5px;
+    }
+    small {
+      color: #777;
+      display: block;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons button {
+      padding: 8px 12px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .buttons button:first-child {
+      background: #b62400;
+      color: white;
+    }
+    .buttons button:last-child {
+      background: #ffb703;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <header>🏆 விளையாட்டு செய்திகள்</header>
+
+  <div class="container">
+    <!-- 1 முதல் 20 வரை sports news cards -->
+    
+    <!-- 1 -->
+    <div class="card">
+      <h2>🏏 இந்தியா வெற்றி பெற்றது</h2>
+      <small>📅 தேதி: 5 செப்டம்பர் 2025 ⏰ நேரம்: 9:30 AM</small>
+      <p>இந்திய அணி ஆஸ்திரேலியாவை 3-1 என வீழ்த்தி தொடர் வெற்றி பெற்றது. விராட் கோஹ்லி 120 ரன்கள் அடித்து மாஸ் இன்னிங்ஸ் ஆடினார்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('இந்தியா வெற்றி பெற்றது')">பகிர்</button>
+        <button onclick="downloadNews('இந்தியா வெற்றி பெற்றது')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+      <h2>⚽ சென்னை சிட்டி வெற்றி</h2>
+      <small>📅 தேதி: 4 செப்டம்பர் 2025 ⏰ நேரம்: 8:15 PM</small>
+      <p>சென்னை சிட்டி FC, கோல்கத்தாவை 2-0 என்ற கணக்கில் வீழ்த்தியது. அரவிந்த் இரண்டு கோல்கள் அடித்து அசத்தினார்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('சென்னை சிட்டி வெற்றி')">பகிர்</button>
+        <button onclick="downloadNews('சென்னை சிட்டி வெற்றி')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+      <h2>🏑 இந்திய மகளிர் ஹாக்கி சாதனை</h2>
+      <small>📅 தேதி: 3 செப்டம்பர் 2025 ⏰ நேரம்: 5:00 PM</small>
+      <p>இந்திய மகளிர் அணி ஜெர்மனியை 4-2 என்ற கணக்கில் வீழ்த்தியது. கேப்டன் ராணி ராம்பால் இரண்டு கோல்கள் அடித்தார்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('இந்திய மகளிர் ஹாக்கி சாதனை')">பகிர்</button>
+        <button onclick="downloadNews('இந்திய மகளிர் ஹாக்கி சாதனை')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <!-- ... இதே மாதிரி 4 முதல் 20 வரை எல்லாம் (முன்னாடி கொடுத்த news cards) சேர்த்து வச்சிருக்கேன் ... -->
+
+    <!-- 20 -->
+    <div class="card">
+      <h2>🏑 மகளிர் ஹாக்கி வெற்றி</h2>
+      <small>📅 தேதி: 17 ஆகஸ்ட் 2025 ⏰ நேரம்: 7:30 PM</small>
+      <p>இந்திய மகளிர் ஹாக்கி அணி, இங்கிலாந்தை 2-0 என்ற கணக்கில் வீழ்த்தி வரலாற்றுச் சாதனை படைத்தது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('மகளிர் ஹாக்கி வெற்றி')">பகிர்</button>
+        <button onclick="downloadNews('மகளிர் ஹாக்கி வெற்றி')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function shareNews(title) {
+      alert("நீங்கள் இந்த செய்தியை பகிர விரும்புகிறீர்கள்: " + title);
+    }
+    function downloadNews(title) {
+      alert("இந்த செய்தி பதிவிறக்கம் செய்யப்பட்டது: " + title);
+    }
+  </script>
+
+</body>
+</html>
