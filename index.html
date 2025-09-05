@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syedammal Seithigal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Latha', 'Arial', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #c21807;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #444;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #c21807; }
+
+    .search-bar {
+      text-align: center;
+      margin: 15px;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 { font-size: 18px; margin-bottom: 10px; }
+    .card p { font-size: 14px; }
+
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons button {
+      background: #c21807;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttons button:hover { background: #444; }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <title>செய்யது அம்மாள் செய்திகள்</title>
+
+<header style="text-align:center; padding: 20px; background-color:#941805; color:white;">
+  <img src="logo.png" alt="செய்யது அம்மாள் செய்திகள் Logo" style="width:100px; height:auto; border-radius:50%; margin-bottom:10px;">
+  <h1>செய்யது அம்மாள் செய்திகள்</h1>
+  <p>உண்மையை வெளிப்படுத்தும் மக்கள் குரல்</p>
+</header>
+
+
+
+  <nav>
+    <a href="index.html">முகப்பு</a>
+    <a href="arasiyal.html">அரசியல்</a>
+    <a href="#">விளையாட்டு</a>
+    <a href="#">தொழில்நுட்பம்</a>
+    <a href="#">புத்தகங்கள்</a>
+    <a href="#">சிறப்பு செய்திகள்</a>
+  </nav>
+
+  <div class="search-bar">
+    <input type="text" placeholder="தேடுங்கள்...">
+  </div>
+
+  <div class="container">
+    <!-- Example News Card -->
+    <div class="card">
+      <h2>அரசியல்: புதிய சட்டம் அறிவிப்பு</h2>
+      <p>இந்த வாரம் அரசாங்கம் புதிய சட்ட மசோதா அறிவித்தது. மக்கள் பலன் அடைவார்கள்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('அரசியல்: புதிய சட்டம் அறிவிப்பு')">பகிர்</button>
+        <button onclick="downloadNews('அரசியல்: புதிய சட்டம் அறிவிப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+        <div class="card">
+      <h2>தொழில்நுட்பம்: புதிய மொபைல் வெளியீடு</h2>
+      <p>சாம்சங் புதிய மொபைல் இன்று வெளியிடப்பட்டது. அதிக வசதிகள் கொண்டதாக கூறப்படுகிறது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('தொழில்நுட்பம்: புதிய மொபைல் வெளியீடு')">பகிர்</button>
+        <button onclick="downloadNews('தொழில்நுட்பம்: புதிய மொபைல் வெளியீடு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>அரசியல்: TVK சமூக சேவை</h2>
+      <p>TVK கட்சி கிராமப்புறங்களில் மருத்துவ முகாம்கள் நடத்தி மக்கள் பாராட்டைப் பெற்றது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('அரசியல்: TVK சமூக சேவை')">பகிர்</button>
+        <button onclick="downloadNews('அரசியல்: TVK சமூக சேவை')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>விளையாட்டு: ஹாக்கி போட்டி வெற்றி</h2>
+      <p>இந்திய ஹாக்கி அணி சர்வதேச போட்டியில் வெற்றிபெற்று கோப்பையை கைப்பற்றியது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('விளையாட்டு: ஹாக்கி போட்டி வெற்றி')">பகிர்</button>
+        <button onclick="downloadNews('விளையாட்டு: ஹாக்கி போட்டி வெற்றி')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>புத்தகங்கள்: புதிய இலக்கிய வெளியீடு</h2>
+      <p>“தமிழ் பாரம்பரியம்” என்ற நூல் வெளியிடப்பட்டு வாசகர்கள் ஆர்வமாக உள்ளனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('புத்தகங்கள்: புதிய இலக்கிய வெளியீடு')">பகிர்</button>
+        <button onclick="downloadNews('புத்தகங்கள்: புதிய இலக்கிய வெளியீடு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>சிறப்பு: மாணவர் கண்டுபிடிப்பு</h2>
+      <p>தமிழக மாணவர் ஒருவர் புதிய சோலார் எரிசக்தி கருவி கண்டுபிடித்துள்ளார்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('சிறப்பு: மாணவர் கண்டுபிடிப்பு')">பகிர்</button>
+        <button onclick="downloadNews('சிறப்பு: மாணவர் கண்டுபிடிப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>அரசியல்: ஊழல் விவகாரம்</h2>
+      <p>அரசு ஒப்பந்தங்களில் இடம்பெற்ற ஊழல் குறித்த விவகாரம் மக்கள் மத்தியில் அதிர்ச்சியை ஏற்படுத்தியுள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('அரசியல்: ஊழல் விவகாரம்')">பகிர்</button>
+        <button onclick="downloadNews('அரசியல்: ஊழல் விவகாரம்')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>விளையாட்டு: ஆசிய விளையாட்டில் சாதனை</h2>
+      <p>இந்திய விளையாட்டு வீரர்கள் ஆசிய விளையாட்டில் பல பதக்கங்களை வென்று சாதனை படைத்தனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('விளையாட்டு: ஆசிய விளையாட்டில் சாதனை')">பகிர்</button>
+        <button onclick="downloadNews('விளையாட்டு: ஆசிய விளையாட்டில் சாதனை')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>தொழில்நுட்பம்: செயற்கை நுண்ணறிவு வளர்ச்சி</h2>
+      <p>செயற்கை நுண்ணறிவு துறையில் இந்தியா வேகமாக முன்னேறி வருகிறது என நிபுணர்கள் தெரிவித்தனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('தொழில்நுட்பம்: செயற்கை நுண்ணறிவு வளர்ச்சி')">பகிர்</button>
+        <button onclick="downloadNews('தொழில்நுட்பம்: செயற்கை நுண்ணறிவு வளர்ச்சி')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>சிறப்பு: அரசு புதிய நிதி திட்டம்</h2>
+      <p>கிராமப்புற வளர்ச்சிக்காக அரசு புதிய நிதி திட்டத்தை அறிமுகப்படுத்தியுள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('சிறப்பு: அரசு புதிய நிதி திட்டம்')">பகிர்</button>
+        <button onclick="downloadNews('சிறப்பு: அரசு புதிய நிதி திட்டம்')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>புத்தகங்கள்: குழந்தைகளுக்கான கதைத் தொகுப்பு</h2>
+      <p>“சின்னச் சின்ன கதைகள்” என்ற குழந்தைகளுக்கான புத்தகம் வெளியிடப்பட்டுள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('புத்தகங்கள்: குழந்தைகளுக்கான கதைத் தொகுப்பு')">பகிர்</button>
+        <button onclick="downloadNews('புத்தகங்கள்: குழந்தைகளுக்கான கதைத் தொகுப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>அரசியல்: வாக்காளர் விழிப்புணர்வு</h2>
+      <p>இளைஞர்கள் அதிக அளவில் வாக்களிக்க வேண்டுமென அரசியல் கட்சிகள் விழிப்புணர்வு முகாம்களை நடத்துகின்றன.</p>
+      <div class="buttons">
+        <button onclick="shareNews('அரசியல்: வாக்காளர் விழிப்புணர்வு')">பகிர்</button>
+        <button onclick="downloadNews('அரசியல்: வாக்காளர் விழிப்புணர்வு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>விளையாட்டு: கால்பந்து லீக் தொடக்கம்</h2>
+      <p>இந்திய கால்பந்து லீக் அடுத்த வாரம் துவங்குகிறது. ரசிகர்கள் ஆவலுடன் காத்திருக்கின்றனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('விளையாட்டு: கால்பந்து லீக் தொடக்கம்')">பகிர்</button>
+        <button onclick="downloadNews('விளையாட்டு: கால்பந்து லீக் தொடக்கம்')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>தொழில்நுட்பம்: புதிய இணைய வசதி</h2>
+      <p>கிராமப்புறங்களில் இணைய வசதியை விரிவாக்க அரசாங்கம் புதிய திட்டத்தை அறிமுகப்படுத்தியுள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('தொழில்நுட்பம்: புதிய இணைய வசதி')">பகிர்</button>
+        <button onclick="downloadNews('தொழில்நுட்பம்: புதிய இணைய வசதி')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h2>விளையாட்டு: இந்தியா வெற்றி</h2>
+      <p>இந்தியா கிரிக்கெட்டில் வெற்றியைப் பெற்றது. ரசிகர்கள் மகிழ்ச்சி அடைந்தனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('விளையாட்டு: இந்தியா வெற்றி')">பகிர்</button>
+        <button onclick="downloadNews('விளையாட்டு: இந்தியா வெற்றி')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>புத்தகங்கள்: புதிய வெளியீடு</h2>
+      <p>“தமிழ் இலக்கியம்” என்ற புத்தகம் வெளியிடப்பட்டது. வாசகர்கள் ஆர்வமாக உள்ளனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('புத்தகங்கள்: புதிய வெளியீடு')">பகிர்</button>
+        <button onclick="downloadNews('புத்தகங்கள்: புதிய வெளியீடு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Syedammal Seithigal | அனைத்தும் உரிமைகள் பாதுகாக்கப்பட்டவை</p>
+  </footer>
+
+  <script>
+    function shareNews(title) {
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: "இந்த செய்தியை படியுங்கள் - " + title,
+          url: window.location.href
+        });
+      } else {
+        alert("பகிர்வு வசதி உங்களின் உலாவியில் இல்லை.");
+      }
+    }
+
+    function downloadNews(title) {
+      const blob = new Blob([title + " - செய்தி பதிவிறக்கம்"], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "news.txt";
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
