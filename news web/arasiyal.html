@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>அரசியல் செய்திகள் - Syedammal Seithigal</title>
+  <style>
+    body {
+      font-family: 'Latha', 'Arial', sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #c21807;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #c21807; }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 { font-size: 18px; margin-bottom: 10px; }
+    .card p { font-size: 14px; }
+
+    .buttons { margin-top: 10px; }
+    .buttons button {
+      background: #c21807;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttons button:hover { background: #444; }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>அரசியல் செய்திகள்</h1>
+    <p>Syedammal Seithigal</p>
+  </header>
+
+  <nav>
+    <a href="index.html">முகப்பு</a>
+    <a href="politics.html">அரசியல்</a>
+    <a href="#">விளையாட்டு</a>
+    <a href="#">தொழில்நுட்பம்</a>
+    <a href="#">புத்தகங்கள்</a>
+    <a href="#">சிறப்பு செய்திகள்</a>
+  </nav>
+
+  <div class="container">
+    <!-- 1 -->
+    <div class="card">
+      <h2>TVK கட்சியின் புதிய முயற்சி</h2>
+      <p>இளைஞர்களுக்கான வேலை வாய்ப்புகள், கல்வி உதவிகள் மற்றும் மருத்துவ முகாம்கள் மூலம் மக்கள் பாராட்டைப் பெற்றுள்ளது.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 2 -->
+    <div class="card">
+      <h2>அரசு ஊழல் வெளிச்சத்திற்கு</h2>
+      <p>சமீபத்தில் அரசு ஒப்பந்தங்களில் இடம்பெற்ற ஊழல் விவகாரம் வெளிச்சத்திற்கு வந்துள்ளது. மக்கள் அமைப்புகள் தெளிவான விசாரணையை கோருகின்றன.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 3 -->
+    <div class="card">
+      <h2>உள்ளூராட்சி தேர்தல் தயாரிப்பு</h2>
+      <p>வரும் உள்ளூராட்சி தேர்தலுக்கான பணிகள் தீவிரமாக நடைபெற்று வருகின்றன. பல கட்சிகள் தங்களின் வேட்பாளர்களை அறிவிக்கத் தொடங்கியுள்ளன.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 4 -->
+    <div class="card">
+      <h2>புதிய மக்கள் நல திட்டம்</h2>
+      <p>அரசு சுகாதார துறையில் புதிய திட்டத்தை அறிமுகப்படுத்தியுள்ளது. கிராமப்புறங்களில் மருத்துவ முகாம்கள் நடத்தப்பட உள்ளது.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 5 -->
+    <div class="card">
+      <h2>பேரணி மற்றும் போராட்டம்</h2>
+      <p>கல்வி உரிமைக்காக மாணவர்கள் அமைதி பேரணியில் ஈடுபட்டனர். பல்வேறு சமூக அமைப்புகள் ஆதரவு தெரிவித்தன.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 6 -->
+    <div class="card">
+      <h2>புதிய சட்ட மசோதா</h2>
+      <p>சபையில் விவாதிக்கப்பட்ட புதிய சட்ட மசோதா மக்கள் நலனுக்காக உருவாக்கப்பட்டதாக அரசு தெரிவித்துள்ளது.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 7 -->
+    <div class="card">
+      <h2>மத்திய அரசு நிதி ஒதுக்கீடு</h2>
+      <p>தமிழகத்திற்கு கூடுதல் நிதி ஒதுக்கீடு செய்யப்படும் என மத்திய அரசு அறிவித்துள்ளது. பல்வேறு வளர்ச்சி திட்டங்களுக்கு உதவியாகும்.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 8 -->
+    <div class="card">
+      <h2>வாக்காளர் விழிப்புணர்வு முகாம்</h2>
+      <p>இளைஞர்கள் அதிக அளவில் வாக்களிக்க வேண்டுமென அரசியல் கட்சிகள் விழிப்புணர்வு முகாம்களை நடத்தி வருகின்றன.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 9 -->
+    <div class="card">
+      <h2>சுற்றுச்சூழல் பாதுகாப்பு சட்டம்</h2>
+      <p>சுற்றுச்சூழல் பாதுகாப்பு தொடர்பான புதிய சட்டம் விரைவில் நடைமுறைக்கு வரும் என அரசு அறிவித்துள்ளது.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 10 -->
+    <div class="card">
+      <h2>அரசியல் கூட்டணி அறிவிப்பு</h2>
+      <p>வரும் தேர்தலுக்கான அரசியல் கூட்டணிகள் உருவாகி வருகின்றன. பல கட்சிகள் சேர்ந்து கூட்டணி அறிவித்துள்ளன.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 11 -->
+    <div class="card">
+      <h2>TVK இளைஞர் முகாம்</h2>
+      <p>TVK கட்சி இளைஞர்களுக்கான தலைமைத்துவ பயிற்சி முகாமை நடத்தி வருகிறது. பல மாணவர்கள் கலந்து கொண்டனர்.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+    <!-- 12 -->
+    <div class="card">
+      <h2>அரசு ஊழியர் சம்பள உயர்வு</h2>
+      <p>அரசு ஊழியர்களுக்கு சம்பள உயர்வு அறிவிக்கப்பட்டுள்ளது. இதனால் 5 லட்சத்திற்கும் மேற்பட்ட பணியாளர்கள் பயன் பெறுகின்றனர்.</p>
+      <div class="buttons"><button onclick="shareNews(this)">பகிர்</button><button onclick="downloadNews(this)">பதிவிறக்கு</button></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Syedammal Seithigal | அனைத்தும் உரிமைகள் பாதுகாக்கப்பட்டவை</p>
+  </footer>
+
+  <script>
+    function shareNews(btn) {
+      const title = btn.parentElement.parentElement.querySelector("h2").innerText;
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: "இந்த செய்தியை படியுங்கள் - " + title,
+          url: window.location.href
+        });
+      } else {
+        alert("பகிர்வு வசதி உங்களின் உலாவியில் இல்லை.");
+      }
+    }
+
+    function downloadNews(btn) {
+      const title = btn.parentElement.parentElement.querySelector("h2").innerText;
+      const blob = new Blob([title + " - செய்தி பதிவிறக்கம்"], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "politics-news.txt";
+      link.click();
+    }
+  </script>
+
+</body>
+</html>
