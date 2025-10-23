@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>புத்தகங்கள் - Syedammal Seithigal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Latha', 'Arial', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #c21807;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #444;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #c21807; }
+
+    .search-bar {
+      text-align: center;
+      margin: 15px;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card h2 { font-size: 18px; margin-bottom: 8px; }
+    .card p { font-size: 14px; }
+
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons button {
+      background: #c21807;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttons button:hover { background: #444; }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header style="text-align:center; padding: 20px; background-color:#941805; color:white;">
+  <img src="logo.png" alt="செய்யது அம்மாள் செய்திகள் Logo" style="width:100px; height:auto; border-radius:50%; margin-bottom:10px;">
+  <h1>புத்தகங்கள்</h1>
+  <p>அறிவின் உலகை விரிவாக்கும் வாசிப்பு</p>
+</header>
+
+<nav>
+  <a href="index.html">முகப்பு</a>
+  <a href="arasiyal.html">அரசியல்</a>
+  <a href="vilayattu.html">விளையாட்டு</a>
+  <a href="thozhil.html">தொழில்நுட்பம்</a>
+  <a href="books.html">புத்தகங்கள்</a>
+  <a href="special.html">சிறப்பு செய்திகள்</a>
+    <a href="video.html">வீடியோக்கள்</a>
+</nav>
+
+<div class="search-bar">
+  <input type="text" placeholder="புத்தகம் தேடுங்கள்...">
+</div>
+
+<div class="container">
+  <div class="card">
+    <img src="book1.jpg" alt="Book 1">
+    <h2>பொன்னியின் செல்வன்</h2>
+    <p>கல்கி எழுதிய புகழ்பெற்ற வரலாற்று நாவல்.</p>
+    <div class="buttons">
+      <button onclick="shareNews('பொன்னியின் செல்வன்')">பகிர்</button>
+      <button onclick="downloadNews('பொன்னியின் செல்வன்')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="book2.jpg" alt="Book 2">
+    <h2>திருக்குறள்</h2>
+    <p>திருவள்ளுவர் எழுதிய உலகப் புகழ்பெற்ற நூல்.</p>
+    <div class="buttons">
+      <button onclick="shareNews('திருக்குறள்')">பகிர்</button>
+      <button onclick="downloadNews('திருக்குறள்')">பதிவிறக்கு</button>
+    </div>
+  </div>
+  <div class="card">
+  <img src="book 5.jpg" alt="சுய முன்னேற்றம் புத்தகம்" style="width:100%; height:200px; object-fit:cover; border-radius:6px;">
+  <h2>சுய முன்னேற்றம் – புதிய வெளியீடு</h2>
+  <p class="date">05 செப்டம்பர் 2025, 04:30 பிற்பகல்</p>
+  <p>தமிழில் சுய முன்னேற்றத்திற்கு உகந்த புதிய புத்தகம் வெளியிடப்பட்டுள்ளது. மாணவர்கள் மற்றும் தொழிலாளர்கள் மத்தியில் எதிர்பார்ப்பு அதிகம்.</p>
+  <div class="buttons">
+    <button onclick="shareNews('சுய முன்னேற்றம் – புதிய வெளியீடு')">பகிர்</button>
+    <button onclick="downloadNews('சுய முன்னேற்றம் – புதிய வெளியீடு')">பதிவிறக்கு</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="book 4.jpg" alt="வரலாற்று நாவல்" style="width:100%; height:200px; object-fit:cover; border-radius:6px;">
+  <h2>வரலாற்று நாவல் – வாசகர்களை கவர்கிறது</h2>
+  <p class="date">05 செப்டம்பர் 2025, 05:15 பிற்பகல்</p>
+  <p>புதிய வரலாற்று நாவல் ஒன்று தமிழ் வாசகர்களிடம் பெரும் வரவேற்பை பெற்றுள்ளது. இலக்கிய விமர்சகர்களிடமும் பாராட்டுகள் குவிகின்றன.</p>
+  <div class="buttons">
+    <button onclick="shareNews('வரலாற்று நாவல் – வாசகர்களை கவர்கிறது')">பகிர்</button>
+    <button onclick="downloadNews('வரலாற்று நாவல் – வாசகர்களை கவர்கிறது')">பதிவிறக்கு</button>
+  </div>
+</div>
+
+<div class="card">
+  <img src="book 7.jpg" alt="கல்வி சார்ந்த புத்தகம்" style="width:100%; height:200px; object-fit:cover; border-radius:6px;">
+  <h2>மாணவர்களுக்கு கல்வி சார்ந்த புதிய நூல்</h2>
+  <p class="date">05 செப்டம்பர் 2025, 06:00 பிற்பகல்</p>
+  <p>பள்ளி மற்றும் கல்லூரி மாணவர்களுக்கு கல்வி வழிகாட்டும் புத்தகம் வெளியிடப்பட்டுள்ளது. ஆசிரியர்கள் இந்த நூலை பரிந்துரைக்கின்றனர்.</p>
+  <div class="buttons">
+    <button onclick="shareNews('கல்வி சார்ந்த புதிய நூல்')">பகிர்</button>
+    <button onclick="downloadNews('கல்வி சார்ந்த புதிய நூல்')">பதிவிறக்கு</button>
+  </div>
+</div>
+
+
+  <div class="card">
+    <img src="book 8.jpg" alt="Book 3">
+    <h2>சிலப்பதிகாரம்</h2>
+    <p>இளங்கோ அடிகள் எழுதிய சங்க இலக்கிய காவியம்.</p>
+    <div class="buttons">
+      <button onclick="shareNews('சிலப்பதிகாரம்')">பகிர்</button>
+      <button onclick="downloadNews('சிலப்பதிகாரம்')">பதிவிறக்கு</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Syedammal Seithigal | அனைத்தும் உரிமைகள் பாதுகாக்கப்பட்டவை</p>
+</footer>
+
+<script>
+  function shareNews(title) {
+    if (navigator.share) {
+      navigator.share({
+        title: title,
+        text: "இந்த புத்தகத்தை பாருங்கள் - " + title,
+        url: window.location.href
+      });
+    } else {
+      alert("பகிர்வு வசதி உங்களின் உலாவியில் இல்லை.");
+    }
+  }
+
+  function downloadNews(title) {
+    alert(title + " புத்தகத்தை பதிவிறக்க வசதி விரைவில் சேர்க்கப்படும்!");
+  }
+</script>
+
+</body>
+</html>

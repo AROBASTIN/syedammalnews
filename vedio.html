@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>வீடியோக்கள் - Syedammal Seithigal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Latha', 'Arial', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #c21807;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #444;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #c21807; }
+
+    .search-bar {
+      text-align: center;
+      margin: 15px;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .card video {
+      width: 100%;
+      height: 200px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .card h2 { font-size: 18px; margin-bottom: 8px; }
+    .card p { font-size: 14px; }
+
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons button {
+      background: #c21807;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttons button:hover { background: #444; }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.png" alt="செய்யது அம்மாள் செய்திகள் Logo" style="width:100px; height:auto; border-radius:50%; margin-bottom:10px;">
+  <h1>வீடியோக்கள்</h1>
+  <p>செய்திகள், அறிவியல் மற்றும் நிகழ்வுகளை காணுங்கள்</p>
+</header>
+
+<nav>
+  <a href="index.html">முகப்பு</a>
+  <a href="arasiyal.html">அரசியல்</a>
+  <a href="vilayattu.html">விளையாட்டு</a>
+  <a href="thozhil.html">தொழில்நுட்பம்</a>
+  <a href="books.html">புத்தகங்கள்</a>
+  <a href="special.html">சிறப்பு செய்திகள்</a>
+  <a href="video.html">வீடியோக்கள்</a>
+</nav>
+
+<div class="search-bar">
+  <input type="text" placeholder="வீடியோ தேடுங்கள்...">
+</div>
+
+<div class="container">
+  <div class="card">
+    <video controls>
+      <source src="iv.mp4" type="video/mp4">
+      உங்கள் உலாவி வீடியோ ஆதரிக்கவில்லை.
+    </video>
+    <h2>மாணவர்கள் அட்டுலியம்</h2>
+    <p>மாணவர்கள் பேருந்தில் பயணித்தபோது வெடி வெடித்து பயங்கர சம்பவம் ஏற்பட்டது! உடனடி பாதுகாப்பு நடவடிக்கைகள், அதிகாரிகள் விசாரணை நடத்தி வருகின்றனர். மாணவர்கள் மற்றும் பொதுமக்கள் கவனமாக இருக்குமாறு அறிவுறுத்தப்பட்டுள்ளனர்.</p>
+    <div class="buttons">
+      <button onclick="shareVideo('தமிழ் செய்தி தினசரி')">பகிர்</button>
+      <button onclick="downloadVideo('தமிழ் செய்தி தினசரி')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <video controls>
+      <source src="jeep.mp4" type="video/mp4">
+      உங்கள் உலாவி வீடியோ ஆதரிக்கவில்லை.
+    </video>
+    <h2>Jeep-இல் கலவரம்</h2>
+    <p>மலைப்பாதை சாலையில் ஜீப் மிக வேகமாகவும் இடது-வலது வளைவுகளில் ஆபத்தான முறையில் ஓட்டப்பட்டுள்ளது! பயணிகள் மற்றும் பொதுமக்கள் மிகவும் கவனமாக இருக்க வேண்டும்.</p>
+    <div class="buttons">
+      <button onclick="shareVideo('மாணவர்களுக்கு கல்வி வழிகாட்டல்')">பகிர்</button>
+      <button onclick="downloadVideo('மாணவர்களுக்கு கல்வி வழிகாட்டல்')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <div class="card">
+    <video controls>
+      <source src="video3.mp4" type="video/mp4">
+      உங்கள் உலாவி வீடியோ ஆதரிக்கவில்லை.
+    </video>
+    <h2>சிறப்பு நிகழ்வு வீடியோ</h2>
+    <p>கல்லூரி மற்றும் சமூக நிகழ்வுகளை பற்றிய சிறப்பு வீடியோ.</p>
+    <div class="buttons">
+      <button onclick="shareVideo('சிறப்பு நிகழ்வு வீடியோ')">பகிர்</button>
+      <button onclick="downloadVideo('சிறப்பு நிகழ்வு வீடியோ')">பதிவிறக்கு</button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Syedammal Seithigal | அனைத்தும் உரிமைகள் பாதுகாக்கப்பட்டவை</p>
+</footer>
+
+<script>
+  function shareVideo(title) {
+    if (navigator.share) {
+      navigator.share({
+        title: title,
+        text: "இந்த வீடியோவை பாருங்கள் - " + title,
+        url: window.location.href
+      });
+    } else {
+      alert("பகிர்வு வசதி உங்களின் உலாவியில் இல்லை.");
+    }
+  }
+
+  function downloadVideo(title) {
+    alert(title + " வீடியோ பதிவிறக்க வசதி விரைவில் சேர்க்கப்படும்!");
+  }
+</script>
+
+</body>
+</html>

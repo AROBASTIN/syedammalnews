@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Syedammal Seithigal</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Latha', 'Arial', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #c21807;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    header h1 { font-size: 26px; }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      background: #444;
+      color: white;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px;
+      padding: 8px 12px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #c21807; }
+
+    .search-bar {
+      text-align: center;
+      margin: 15px;
+    }
+    .search-bar input {
+      width: 80%;
+      max-width: 400px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 { font-size: 18px; margin-bottom: 10px; }
+    .card p { font-size: 14px; }
+
+    .buttons {
+      margin-top: 10px;
+    }
+    .buttons button {
+      background: #c21807;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttons button:hover { background: #444; }
+
+    footer {
+      text-align: center;
+      background: #222;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <title>செய்யது அம்மாள் செய்திகள்</title>
+
+<header style="text-align:center; padding: 20px; background-color:#941805; color:white;">
+  <img src="logo.png" alt="செய்யது அம்மாள் செய்திகள் Logo" style="width:100px; height:auto; border-radius:50%; margin-bottom:10px;">
+  <h1>செய்யது அம்மாள் செய்திகள்</h1>
+  <p>உண்மையை வெளிப்படுத்தும் மக்கள் குரல்  </p>
+</header>
+
+
+<nav>
+  <a href="index.html">முகப்பு</a>
+  <a href="arasiyal.html">அரசியல்</a>
+  <a href="vilayattu.html">விளையாட்டு</a>
+  <a href="thozhil.html">தொழில்நுட்பம்</a>
+  <a href="books.html">புத்தகங்கள்</a>
+  <a href="special.html">சிறப்பு செய்திகள்</a>
+    <a href="video.html">வீடியோக்கள்</a>
+</nav>
+
+<div class="search-bar">
+  <input type="text" placeholder="தேடுங்கள்...">
+</div>
+
+
+  <div class="container">
+    <!-- தொழில் செய்திகள் -->
+    <div class="card">
+      <h2>தொழில் வாய்ப்பு: ஐடி நிறுவனம் 500 பேர் பணியமர்த்தல்</h2>
+      <p class="date">05 செப்டம்பர் 2025, 10:00 காலை</p>
+      <p>சென்னை அடிப்படையிலான ஐடி நிறுவனம் அடுத்த 6 மாதங்களில் 500 பேரை பணியில் அமர்த்தும் திட்டம் அறிவித்துள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('ஐடி நிறுவனம் 500 பேர் பணியமர்த்தல்')">பகிர்</button>
+        <button onclick="downloadNews('ஐடி நிறுவனம் 500 பேர் பணியமர்த்தல்')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>ஸ்டார்ட்அப் நிறுவனம் 2 கோடி ரூபாய் முதலீடு பெற்றது</h2>
+      <p class="date">05 செப்டம்பர் 2025, 11:30 காலை</p>
+      <p>மதுரையைச் சேர்ந்த ஸ்டார்ட்அப் நிறுவனம் வணிக விரிவாக்கத்திற்காக 2 கோடி ரூபாய் முதலீடு பெற்றுள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('ஸ்டார்ட்அப் நிறுவனம் முதலீடு')">பகிர்</button>
+        <button onclick="downloadNews('ஸ்டார்ட்அப் நிறுவனம் முதலீடு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>அரசு வேலைவாய்ப்பு அறிவிப்பு</h2>
+      <p class="date">05 செப்டம்பர் 2025, 12:15 பிற்பகல்</p>
+      <p>தமிழ்நாடு அரசு கல்வித் துறையில் 2000 ஆசிரியர் பணியிடங்கள் நிரப்ப அறிவித்துள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('அரசு வேலைவாய்ப்பு அறிவிப்பு')">பகிர்</button>
+        <button onclick="downloadNews('அரசு வேலைவாய்ப்பு அறிவிப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>ஏக்ஸ்போர்ட் நிறுவனத்தில் வேலை வாய்ப்பு</h2>
+      <p class="date">05 செப்டம்பர் 2025, 01:00 பிற்பகல்</p>
+      <p>திருப்பூரில் உள்ள ஏக்ஸ்போர்ட் நிறுவனத்தில் பல்வேறு துறைகளில் 300 பேர் பணியமர்த்தப்பட உள்ளனர்.</p>
+      <div class="buttons">
+        <button onclick="shareNews('ஏக்ஸ்போர்ட் நிறுவனத்தில் வேலை வாய்ப்பு')">பகிர்</button>
+        <button onclick="downloadNews('ஏக்ஸ்போர்ட் நிறுவனத்தில் வேலை வாய்ப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>பொது துறை வங்கியில் வேலைவாய்ப்பு</h2>
+      <p class="date">05 செப்டம்பர் 2025, 01:45 பிற்பகல்</p>
+      <p>பொது துறை வங்கியில் 150 கிளார்க் பணியிடங்களுக்கான அறிவிப்பு வெளியாகியுள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('வங்கி வேலைவாய்ப்பு')">பகிர்</button>
+        <button onclick="downloadNews('வங்கி வேலைவாய்ப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>இன்ஜினியரிங் மாணவர்களுக்கு இன்டர்ன்ஷிப்</h2>
+      <p class="date">05 செப்டம்பர் 2025, 02:30 பிற்பகல்</p>
+      <p>பல்கலைக்கழகத்துடன் இணைந்து முன்னணி மென்பொருள் நிறுவனம் 3 மாத இன்டர்ன்ஷிப் திட்டம் தொடங்குகிறது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('இன்டர்ன்ஷிப் அறிவிப்பு')">பகிர்</button>
+        <button onclick="downloadNews('இன்டர்ன்ஷிப் அறிவிப்பு')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>புதிய தொழில் தொடக்கத்திற்கான கடன்</h2>
+      <p class="date">05 செப்டம்பர் 2025, 03:00 பிற்பகல்</p>
+      <p>மைக்ரோ சிறு மற்றும் நடுத்தர தொழில்களுக்கு அரசு குறைந்த வட்டியில் கடன் வழங்கும் திட்டம் அறிவித்துள்ளது.</p>
+      <div class="buttons">
+        <button onclick="shareNews('புதிய தொழில் தொடக்க கடன்')">பகிர்</button>
+        <button onclick="downloadNews('புதிய தொழில் தொடக்க கடன்')">பதிவிறக்கு</button>
+      </div>
+    </div>
+
+  <!-- மேலும் செய்திகளை இங்கே சேர்க்கலாம் -->
+</div>
+
+<footer>
+  <p>© 2025 Syedammal Seithigal | அனைத்தும் உரிமைகள் பாதுகாக்கப்பட்டவை</p>
+</footer>
+
+<script>
+  function shareNews(title) {
+    if (navigator.share) {
+      navigator.share({
+        title: title,
+        text: "இந்த செய்தியை படியுங்கள் - " + title,
+        url: window.location.href
+      });
+    } else {
+      alert("பகிர்வு வசதி உங்களின் உலாவியில் இல்லை.");
+    }
+  }
+</script>
+
+</body>
+</html>

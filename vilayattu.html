@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> செய்திகள் - Syedammal Seithigal</title>
+  <style>
+    body {
+      font-family: 'Latha', 'Arial', sans-serif;
+      background: #f8f9fa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #c21807;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #444;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      padding: 6px 12px;
+      border-radius: 4px;
+    }
+    nav a:hover { background: #c21807; }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .card h2 { font-size: 18px; margin-bottom: 10px; }
+    .card p { font-size: 14px; }
+
+    .buttons { margin-top: 10px; }
+    .buttons button {
+      background: #c21807;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      margin-right: 5px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .buttons button:hover { background: #444; }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>விளையாட்டு செய்திகள்</h1>
+    <p>Syedammal Seithigal</p>
+  </header>
+
+  <nav>
+    <a href="index.html">முகப்பு</a>
+    <a href="arasiyal.html">அரசியல்</a>
+    <a href="vilayattu.html">விளையாட்டு</a>
+    <a href="tholil.html">தொழில்நுட்பம்</a>
+    <a href="books.html">புத்தகங்கள்</a>
+    <a href="special.html">சிறப்பு செய்திகள்</a>
+    <a href="video.html">வீடியோக்கள்</a>
+  </nav>
+
+  <div class="container">
+    <!-- 1 -->
+     <!-- 1 -->
+  <div class="card">
+    <h2>விளையாட்டு: இந்தியா ஆஸ்திரேலியாவை வீழ்த்தியது</h2>
+    <p>இந்தியா, ஆஸ்திரேலியாவை 5 விக்கெட்டுகள் வித்தியாசத்தில் வீழ்த்தி தொடரை கைப்பற்றியது.</p>
+    <div class="buttons">
+      <button onclick="shareNews('இந்தியா ஆஸ்திரேலியாவை வீழ்த்தியது')">பகிர்</button>
+      <button onclick="downloadNews('இந்தியா ஆஸ்திரேலியாவை வீழ்த்தியது')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <!-- 2 -->
+  <div class="card">
+    <h2>விளையாட்டு: மேஸ்ஸி ஹாட்ரிக்</h2>
+    <p>பார்சிலோனாவின் லியோனல் மேஸ்ஸி தனது அணிக்காக 3 கோல்கள் அடித்து ரசிகர்களை மகிழ்ச்சியில் ஆழ்த்தினார்.</p>
+    <div class="buttons">
+      <button onclick="shareNews('மேஸ்ஸி ஹாட்ரிக்')">பகிர்</button>
+      <button onclick="downloadNews('மேஸ்ஸி ஹாட்ரிக்')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <!-- 3 -->
+  <div class="card">
+    <h2>விளையாட்டு: பி.வி.சிந்து வெற்றி</h2>
+    <p>இந்தியாவின் பேட்மிண்டன் வீராங்கனை பி.வி.சிந்து, உலக சாம்பியன்ஷிப்பில் தங்கம் வென்றார்.</p>
+    <div class="buttons">
+      <button onclick="shareNews('பி.வி.சிந்து வெற்றி')">பகிர்</button>
+      <button onclick="downloadNews('பி.வி.சிந்து வெற்றி')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <!-- 4 -->
+  <div class="card">
+    <h2>விளையாட்டு: டோக்கியோ ஒலிம்பிக் சாதனை</h2>
+    <p>இந்திய விளையாட்டு வீரர்கள் டோக்கியோ ஒலிம்பிக்கில் வரலாற்று சாதனை புரிந்தனர்.</p>
+    <div class="buttons">
+      <button onclick="shareNews('டோக்கியோ ஒலிம்பிக் சாதனை')">பகிர்</button>
+      <button onclick="downloadNews('டோக்கியோ ஒலிம்பிக் சாதனை')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <!-- 5 -->
+  <div class="card">
+    <h2>விளையாட்டு: இந்திய ஹாக்கி அணி வெற்றி</h2>
+    <p>இந்திய ஹாக்கி அணி பாகிஸ்தானை வீழ்த்தி சாம்பியன் கோப்பையை வென்றது.</p>
+    <div class="buttons">
+      <button onclick="shareNews('இந்திய ஹாக்கி அணி வெற்றி')">பகிர்</button>
+      <button onclick="downloadNews('இந்திய ஹாக்கி அணி வெற்றி')">பதிவிறக்கு</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Syedammal Seithigal | அனைத்தும் உரிமைகள் பாதுகாக்கப்பட்டவை</p>
+  </footer>
+
+  <script>
+    function shareNews(btn) {
+      const title = btn.parentElement.parentElement.querySelector("h2").innerText;
+      if (navigator.share) {
+        navigator.share({
+          title: title,
+          text: "இந்த செய்தியை படியுங்கள் - " + title,
+          url: window.location.href
+        });
+      } else {
+        alert("பகிர்வு வசதி உங்களின் உலாவியில் இல்லை.");
+      }
+    }
+
+    function downloadNews(btn) {
+      const title = btn.parentElement.parentElement.querySelector("h2").innerText;
+      const blob = new Blob([title + " - செய்தி பதிவிறக்கம்"], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "politics-news.txt";
+      link.click();
+    }
+  </script>
+
+</body>
+</html>

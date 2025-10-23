@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>வீடியோ பக்கம் - செய்யது அம்மாள் செய்திகள்</title>
+  <style>
+    body {
+      margin: 0;
+      background: transparent;
+      font-family: 'Arial', sans-serif;
+      color: white;
+      overflow: hidden;
+    }
+    .video-frame {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      background: black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .video-content {
+      width: 80%;
+      height: 60%;
+      background: #222;
+      border: 5px solid #c21807;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .breaking-news {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      background: rgba(0,0,0,0.7);
+      padding: 10px;
+      font-size: 20px;
+      color: #fff;
+      animation: scroll 15s linear infinite;
+      white-space: nowrap;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-frame">
+    <div class="video-content">
+      வீடியோ ஓடும் பகுதி
+    </div>
+    <div class="breaking-news">
+      🚨 முக்கிய செய்தி: இன்று மாவட்டத்தில் கனமழைக்கு வாய்ப்பு! தொடர்ந்து எங்களுடன் இணைந்திருங்கள்! 🚨
+    </div>
+  </div>
+
+</body>
+</html>
